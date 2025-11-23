@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  transition: background 1s ease-in-out;
+}
+
+html.dark {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1e293b 100%);
+}
+
+html:not(.dark) {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f8fafc 100%);
+}
+
+* {
+  transition: background-color 1s ease-in-out, color 1s ease-in-out, border-color 1s ease-in-out;  
+}
+
+.gradient-br-dark {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.gradient-br-light {
+  background: linear-gradient(135deg, #f0fdf4 0%, #f0fdfa 100%);
+}
+
+/* Typebot Bubble Styling */
+[class*="bubble"] button,
+[class*="typebot"] button {
+  border: 2px solid #1e293b !important;
+  border-radius: 8px !important;
+}
+
+[class*="bubble"] [class*="window"],
+[class*="typebot"] [class*="window"] {
+  border: 2px solid #1e293b !important;
+  border-radius: 12px !important;
+}
