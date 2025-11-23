@@ -4,7 +4,7 @@ import { X, Upload, Loader } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useUser } from '../contexts/UserContext';
 
-const API_KEY = import.meta.env['vite-api-key'] || "SUA_API_KEY_AQUI";
+const API_KEY = import.meta.env.VITE_API_KEY || "SUA_API_KEY_AQUI";
 
 interface DocumentData {
   tipo_documento: string;
