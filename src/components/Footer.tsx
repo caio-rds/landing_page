@@ -1,4 +1,3 @@
-import React from 'react';
 import { Facebook, Instagram, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer({ darkMode }: { darkMode: boolean }) {
