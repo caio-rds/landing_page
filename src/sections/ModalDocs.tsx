@@ -4,7 +4,7 @@ import { X, Upload, Loader } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useUser } from '../contexts/UserContext';
 
-const API_KEY = import.meta.env.VITE_API_KEY || "SUA_API_KEY_AQUI";
+const API_KEY = import.meta.env['vite-api-key'] || "SUA_API_KEY_AQUI";
 
 interface DocumentData {
   tipo_documento: string;
@@ -35,10 +35,10 @@ const ModalDocs: React.FC<ModalDocsProps> = ({ isOpen, onClose, onDataExtracted,
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [dragActive, setDragActive] = useState(false);
-  const [crmv, setCrmv] = useState("");
-  const [crmvLoading, setCrmvLoading] = useState(false);
-  const [crmvValid, setCrmvValid] = useState<boolean | null>(null);
-  const [crmvError, setCrmvError] = useState("");
+  // const [crmv, setCrmv] = useState("");
+  // const [crmvLoading, setCrmvLoading] = useState(false);
+  // const [crmvValid, setCrmvValid] = useState<boolean | null>(null);
+  // const [crmvError, setCrmvError] = useState("");
   const modalRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
