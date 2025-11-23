@@ -13,4 +13,15 @@ export default defineConfig({
       'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
     },
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    minify: 'terser',
+    reportCompressedSize: false,
+    chunkSizeWarningLimit: 500,
+  },
+  server: {
+    port: 3000,
+    strictPort: false,
+  },
 })
